@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7.3H</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hud" id="hud"></div>
+    <canvas id="c"></canvas>
+
+    <!-- button panel -->
+    <div
+      class="d-flex py-2 w-100 border align-items-center justify-content-center"
+      id="control-area"
+    >
+      <button type="button" id="startLeftBtn">I am the left window</button>
+      <div class="d-none control-tools" id="controller-tools">
+        <div class="control-row">
+          <span>Balls N: <strong id="ballCountText">8</strong></span>
+          <button type="button" id="decreaseBallBtn">-</button>
+          <button type="button" id="increaseBallBtn">+</button>
+          <button type="button" id="resetBallBtn">Reset</button>
+        </div>
+        <div class="control-row">
+          <label for="gateSizeInput">Gate M: <strong id="gateSizeText">170</strong></label>
+          <input
+            type="range"
+            id="gateSizeInput"
+            min="0"
+            max="450"
+            value="170"
+          />
+        </div>
+        <div class="control-row">
+          <label for="gateYInput">Selected max: <strong id="gateYText">6</strong></label>
+          <input
+            type="range"
+            id="gateYInput"
+            min="0"
+            max="30"
+            value="6"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
